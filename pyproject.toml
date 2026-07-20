@@ -9,6 +9,8 @@ dependencies = [
     "minsearch>=0.0.11",
     "numpy>=2.4.4",
     "onnxruntime>=1.26.0",
+    "opentelemetry-api>=1.44.0",
+    "opentelemetry-sdk>=1.44.0",
     "tokenizers>=0.23.1",
     "tqdm>=4.67.3",
 ]
