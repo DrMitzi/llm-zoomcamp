@@ -10,4 +10,16 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "pydantic-ai>=0.0.30",
     "logfire>=4.37.0",
+    "numpy>=2.4.4",
+    "onnxruntime>=1.26.0",
+    "opentelemetry-api>=1.44.0",
+    "opentelemetry-sdk>=1.44.0",
+    "tokenizers>=0.23.1",
+    "tqdm>=4.67.3",
+]
+
+[dependency-groups]
+dev = [
+    "huggingface-hub>=1.15.0",
+    "jupyter>=1.1.1",
 ]
