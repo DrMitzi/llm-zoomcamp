@@ -1,20 +1,13 @@
 [project]
-name = "llm-zoomcamp-hw"
+name = "hw-logfire"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.13"
+description = "dlt + logfire homework: instrument a Module 1 agent"
+requires-python = ">=3.11"
 dependencies = [
-    "gitsource>=0.0.5",
+    "openai>=1.0.0",
     "minsearch>=0.0.11",
-    "numpy>=2.4.4",
-    "onnxruntime>=1.26.0",
-    "tokenizers>=0.23.1",
-    "tqdm>=4.67.3",
-]
-
-[dependency-groups]
-dev = [
-    "huggingface-hub>=1.15.0",
-    "jupyter>=1.1.1",
+    "requests>=2.28.1",
+    "python-dotenv>=1.0.0",
+    "pydantic-ai>=0.0.30",
+    "logfire>=4.37.0",
 ]

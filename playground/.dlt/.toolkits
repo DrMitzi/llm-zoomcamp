@@ -1,0 +1,46 @@
+init:
+  version: 0.1.1
+  description: Shared rules, secrets handling, and workspace MCP for dlthub
+  tags:
+  - dlthub
+  - init
+  - rules
+  - secrets
+  - mcp
+  installed_at: '2026-07-23T13:43:46.493212+00:00'
+  agent: claude
+  files:
+    .claude/skills/dlthub-router/SKILL.md:
+      sha3_256: af56355d874845d1e58f9e5dcefbc929b9cdd2ce92162cf16814a66016c58396
+    .claude/skills/improve-skills/SKILL.md:
+      sha3_256: c52b222d82d101eaacbbf19d271d3f24b20d8e2bc70d49919d56144d448cd5c4
+    .claude/skills/setup-secrets/SKILL.md:
+      sha3_256: 83fb6e1af003c065ce3bb26042f0e2de24a22df14353db23ad4f6192d90e7785
+    .claude/skills/setup-secrets/cli-reference.md:
+      sha3_256: b3aed4466ecb84770e11176b5b07b109093c72808c44b73d02c5cd789af86c97
+    .claudeignore:
+      sha3_256: 1aa4dc9286dd219dcb55399f388c5ee1f940ab5e399a42b644d488cba57a9ec0
+    .claude/rules/init-dlthub-workspace.md:
+      sha3_256: bd0d85b8bf6b0e0ce454982cfa1f63baddc67cbd1f9d05254a4b6185b48643c0
+  mcp_servers:
+  - dlt-workspace-mcp
+  name: init
+one-shot:
+  version: 0.1.0
+  description: Deploy a GitHub issues pipeline to dltHub Platform in one shot
+  tags:
+  - dlthub
+  - pipeline
+  - one-shot
+  - data-pipeline
+  - python
+  dependencies:
+  - init
+  workflow_entry_skill: deploy-run-sample-pipeline
+  installed_at: '2026-07-23T13:43:46.493212+00:00'
+  agent: claude
+  files:
+    .claude/skills/deploy-run-sample-pipeline/SKILL.md:
+      sha3_256: 91eb1893d0eff52a11af80459d54663428254a9ad17bda38940154d2600a056e
+    .claude/rules/one-shot-workflow.md:
+      sha3_256: 35dd0e85bc37f1702998d362bddc596c4a6b1d16d2350ec990d37c61af228f5a
